@@ -77,7 +77,7 @@ void request_context::report_error(unsigned long error_code, const std::wstring&
 void request_context::report_exception(std::exception_ptr exceptionPtr)
 {
     auto response_impl = m_response._get_impl();
-
+    // Something something something
     // If cancellation has been triggered then ignore any errors.
     if (m_request._cancellation_token().is_canceled())
     {
