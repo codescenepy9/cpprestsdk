@@ -124,6 +124,10 @@ bool request_context::handle_compression()
         {
             m_decompressor = compression::details::get_decompressor_from_header(
                 encoding, compression::details::header_types::transfer_encoding, m_request.decompress_factories());
+            if(!m_request.decompress_factories().empty())
+            {
+                // something something to do
+            }
         }
     }
     catch (...)
