@@ -14,7 +14,7 @@
  ****/
 
 #include "stdafx.h"
-
+//a
 #include "http_client_impl.h"
 
 namespace web
